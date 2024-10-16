@@ -2,17 +2,3 @@
 Vaxee's Algorithm Growth Diary
 
 매일 매일 진행하는 알고리즘 코드카타의 내용을 정리하려고 한다.
-
-
-10월 16일 두수의 차
-
-소요시간 : 1분 내외
-리뷰 : 코드가 간단하기에 대입 연산자 와 - 연산 수식을 합쳐 작성하였다.
-
-class Solution {
-    public int solution(int num1, int num2) {
-        int answer = num1 - num2;
-        return answer;
-    }
-}
-
