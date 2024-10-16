@@ -1,2 +1,15 @@
 # Algorithm
 Vaxee's Algorithm Growth Diary
+
+10월 16일 두수의 차
+
+소요시간 : 1분 내외
+리뷰 : 코드가 간단하기에 대입 연산자 와 - 연산 수식을 합쳐 작성하였다.
+
+class Solution {
+    public int solution(int num1, int num2) {
+        int answer = num1 - num2;
+        return answer;
+    }
+}
+
