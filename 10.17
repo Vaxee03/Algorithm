@@ -1,0 +1,13 @@
+
+10월 17일 두수의 곱
+
+소요시간 : 1분 내외
+리뷰 : 변스 answer을 0으로 초기화 한 뒤, (num 1 * num2) 의 값을 대입하고 return 하였다.
+
+class Solution {
+    public int solution(int num1, int num2) {
+        int answer = 0;
+        answer = num1 * num2;
+        return answer;
+    }
+}
