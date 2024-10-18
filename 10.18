@@ -1,0 +1,46 @@
+
+10월 18일 두수의 몫 구하기
+
+소요시간 : 1분 내외
+리뷰 : 선언된 num1, num2 두가지 변수를 return 바로 뒤에 배치해 몫을 구하였다.
+
+class Solution {
+    public int solution(int num1, int num2) {
+        return num1 / num2;
+    }
+}
+
+
+──────────────────────────────────────────────────────────────────────────────────────────────────
+
+10월 18일 나이 출력
+
+소요시간 : 2분 내외
+리뷰 : 선언된 age 변수를 2023(만나이를 쓰기 때문)에서 빼 생년을 구하여 return 하였다.
+
+class Solution {
+    public int solution(int age) {
+        int birthday = 2023-age;
+        return birthday;
+    }
+}
+
+
+──────────────────────────────────────────────────────────────────────────────────────────────────
+
+10월 18일 두 수 비교하기
+
+소요시간 : 1분 내외
+리뷰 : if문을 통해 선언된 answer 변수에 num1 과 num2 의 값이 같으면 1, 다르면 -1 을 대입해 return 하였다.
+
+class Solution {
+    public int solution(int num1, int num2) {
+        int answer;
+        if(num1==num2){
+            answer = 1;
+        } else{
+            answer = -1;
+        }
+        return answer;
+    }
+}
