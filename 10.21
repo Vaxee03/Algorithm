@@ -1,0 +1,51 @@
+10월 21일 두수의 합 구하기
+
+소요시간 : 1분 내외
+리뷰 : 선언된 num1, num2 두가지 변수를 return 바로 뒤에 배치해 몫을 구하였다.
+
+class Solution {
+    public int solution(int num1, int num2) {
+        return num1 + num2;
+    }
+}
+
+
+──────────────────────────────────────────────────────────────────────────────────────────────────
+
+10월 21일 두 수의 나눗셈
+
+소요시간 : 3분 내외
+리뷰 : num1을 형변환하여 계산 결과 전체를 double로 형변환 한 후, double 타입의 answer에 저장
+       정수형태의 제출을 위해 리턴시에 answer를 int로 형변환하였음.
+
+class Solution {
+    public int solution(int num1, int num2) {
+        double answer = (double)num1 / num2  * 1000;
+        return (int)answer;
+    }
+}
+
+
+──────────────────────────────────────────────────────────────────────────────────────────────────
+
+10월 21일 각도기
+
+소요시간 : 5분 내외
+리뷰 : if문을 활용하여 각 구간에 맞게 사전에 정의된 리턴값을 return함.
+
+class Solution {
+    public int solution(int angle) {
+        if(angle<90){
+            return 1;
+        }
+        else if(angle==90){
+            return 2;
+        }
+        else if(angle<180){
+            return 3;
+        }
+        else{
+            return 4;
+        }
+    }
+}
