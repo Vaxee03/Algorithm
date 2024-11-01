@@ -1,0 +1,19 @@
+
+11월 1일 자연수 뒤집어 배열로 만들기
+
+소요시간 : 30분 내외
+리뷰 : 주어진 long n 의 길이를 측정해 해당 길이 만큼 '10을 나누어 배열에 더하는 것'을 반복한다.
+
+class Solution {
+    public int[] solution(long n) {
+        String str = Long.toString(n);
+        int[] answer = new int[str.length()];
+        
+        int index = 0;
+        while (n > 0) {
+            answer[index++] = (int)(n % 10);
+            n /= 10;
+        }
+        return answer;
+    }
+}
