@@ -36,23 +36,20 @@ class Solution {
 소요시간 : 30분 내외
 리뷰 : 배열을 선언한 뒤 배열안에 숫자들을 하나씩 뽑아서 넣고, 작은 수부터 꺼내고 10을 곱해서 꺼내고를 반복한다.
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 
 class Solution {
     public long solution(long n) {
         long answer = 0;
         List<Integer> number = new ArrayList<>();
 
-        
         for (; n >= 1 ; n /= 10) {
             number.add((int)(n % 10));
         }
         
-        for (int i = 1 ; number.isEmpty()==false ; i*=10){
+        for (int i = 1 ; number.isEmpty() == false ;  i *= 10) {
             answer += Collections.min(number) * i;
             number.remove(Collections.min(number));
         }
