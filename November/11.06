@@ -1,0 +1,61 @@
+
+11월 6일 문자열을 정수로 바꾸기
+
+소요시간 : 5분 내외
+리뷰 : 문자열을 int 타입으로 변환해주는 .parseInt() 함수를 사용하였다.
+
+class Solution {
+    public int solution(String s) {
+        int answer = Integer.parseInt(s);
+        return answer;
+    }
+}
+
+
+11월 6일 정수 제곱근 판별
+
+소요시간 : 10분 내외
+리뷰 : x 제곱이 n이 되기까지 for문을 돌리며 값을 판별한다.
+
+class Solution {
+    public long solution(long n) {
+        long x;
+        
+        for(x = 1 ; x * x <= n ; x++){
+            if( x * x == n ){
+                return (x+1) * (x+1);
+            }
+        }
+        return -1;
+    }
+}
+
+
+11월 6일 정수 내림차순으로 배치하기
+
+소요시간 : 30분 내외
+리뷰 : 배열을 선언한 뒤 배열안에 숫자들을 하나씩 뽑아서 넣고, 작은 수부터 꺼내고 10을 곱해서 꺼내고를 반복한다.
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+class Solution {
+    public long solution(long n) {
+        long answer = 0;
+        List<Integer> number = new ArrayList<>();
+
+        
+        for (; n >= 1 ; n /= 10) {
+            number.add((int)(n % 10));
+        }
+        
+        for (int i = 1 ; number.isEmpty()==false ; i*=10){
+            answer += Collections.min(number) * i;
+            number.remove(Collections.min(number));
+        }
+        return answer;
+    }
+}
