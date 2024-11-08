@@ -1,7 +1,13 @@
+
+11월 8일 두 정수 사이의 합
+
+소요시간 : 5분 내외
+리뷰 : temp 를 활용해 a 와 b 의 크기를 정렬해주고, a가 b까지 도달하는 사이의 수를 모두 더한다.
+
 class Solution {
     public long solution(int a, int b) {
-        long answer = 0;
         
+        long answer = 0;
         int temp;
         
         if (b<a){
@@ -9,21 +15,22 @@ class Solution {
             a = b;
             b = temp;
         }
-        
         for(;a<=b;a++){
             answer +=a;
         }
-        
         return answer;
     }
 }
 
 
+11월 8일 콜라츠 추측
 
-
+소요시간 : 15분 내외
+리뷰 : 콜라츠 추측을 실행하며 count를 올리고 count가 500 이상이 되면 -1을 반환 , num이 1이 되면 count를 반환한다.
 
 class Solution {
     public int solution(int num) {
+        
         long n = num;
         int count = 0;
         
@@ -31,7 +38,6 @@ class Solution {
             if (count >= 500) {
                 return -1;
             }
-
             if (n % 2 == 0) {
                 n /= 2;
             } else {
@@ -39,17 +45,19 @@ class Solution {
             }
             count++;
         }
-        
         return count;
     }
 }
 
 
+11월 8일 서울에서 김서방 찾기
 
-
+소요시간 : 20분 내외
+리뷰 : 주어진 배열 안에서 for문을 통해 kim과 같은 값을 찾고 값이 같다고 where 변수에 저장한다.
 
 class Solution {
     public String solution(String[] seoul) {
+       
         int where = 0;
 
         for (int i = 0; i < seoul.length; i++) {
@@ -58,7 +66,6 @@ class Solution {
                 break;
             }
         }
-        
         return "김서방은 " + where + "에 있다";
     }
 }
