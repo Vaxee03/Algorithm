@@ -4,12 +4,12 @@ class Solution {
         
         while (!s.equals("1")) {
             zeroCount += s.length() - s.replace("0", "").length();
-            int num = s.replace("0", "").length();
+            int oneCount = s.replace("0", "").length();
             
             String text = "";
-            while (num > 0) {
-                text = (num % 2) + text;
-                num /= 2;
+            while (oneCount > 0) {
+                text = (oneCount % 2) + text;
+                oneCount /= 2;
             }
             s = text;
             changeCount++;
