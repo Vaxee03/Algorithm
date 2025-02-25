@@ -13,6 +13,10 @@ class Solution {
             }
         }
         
-        return stack.isEmpty() ? 1 : 0;
+        if (stack.isEmpty()) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }
