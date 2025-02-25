@@ -1,14 +1,16 @@
 class Solution {
     public int solution(int n) {
-        int MOD = 1234567;
-        int a = 0, b = 1;
+        int answer = 0;
+        int a = 0;
+        int b = 1;
+        int mod = 1234567;
         
         for (int i = 2; i <= n; i++) {
-            int temp = (a + b) % MOD;
+            answer = (a + b) % mod;
             a = b;
-            b = temp;
+            b = answer;
         }
         
-        return b;
+        return answer;
     }
 }
