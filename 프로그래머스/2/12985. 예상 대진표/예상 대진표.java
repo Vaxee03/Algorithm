@@ -10,9 +10,4 @@ class Solution {
 
         return round;
     }
-
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        System.out.println(sol.solution(8, 4, 7)); // 3
-    }
 }
